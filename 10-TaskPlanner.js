@@ -59,15 +59,15 @@ function createTaskPlanner() {
 
   const planner = createTaskPlanner();
 
-  planner.addTask({ id: 1, name: "Completar informe", priority: 2, tags: ["trabajo"], completed: false });
-  planner.addTask({ id: 2, name: "Hacer ejercicio", priority: 3, tags: ["salud"], completed: false });
-  planner.addTask({ id: 3, name: "Estudiar para el examen", priority: 1, tags: ["academia"], completed: false });
-  
-  console.log(planner.getTasks()); // Lista de todas las tareas
-  console.log(planner.getPendingTasks()); // Lista de tareas pendientes
-  console.log(planner.getCompletedTasks()); // Lista de tareas completadas
-  
-  planner.markTaskAsCompleted(2); // Marcar una tarea como completada
-  
-  console.log(planner.getTasks()); // Lista actualizada de todas las tareas
-  console.log(planner.getCompletedTasks()); // Lista actualizada de tareas completadas
+planner.addTask({ id: 1, name: "Completar informe", priority: 2, tags: ["trabajo"], completed: false });
+planner.addTask({ id: 2, name: "Hacer ejercicio", priority: 3, tags: ["salud"], completed: false });
+planner.addTask({ id: 3, name: "Estudiar para el examen", priority: 1, tags: ["academia"], completed: false });
+
+console.log(planner.getTasks());
+console.log(planner.getPendingTasks());
+console.log(planner.getCompletedTasks());
+
+planner.markTaskAsCompleted(2);
+
+console.log(planner.getTasks());
+console.log(planner.getCompletedTasks());
